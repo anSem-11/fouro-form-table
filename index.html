@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fouro Test task 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form" method="post" action="#">
+            <div>
+                <label class="label" for="firstName">Имя:</label>
+                <input class="input" type="text" id="firstName" name="firstName" placeholder="Ваше Имя" required>
+            </div>
+            <div>
+                <label class="label" for="lastName">Фамилия:</label>
+                <input class="input" type="text" id="lastName" name="lastName" placeholder="Ваша Фамилия" required>
+            </div>
+            <div>
+                <label class="label" for="email">Email:</label>
+                <input class="input" type="text" id="email" name="email" placeholder="email@domen.ru" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            </div>
+            <div class="input-wrapper">
+                <div class="input-wrapper__item">
+                    <label class="label" for="company">Компания:</label>
+                    <select class="input company" name="company" required>
+                        <option value="">Укажите компанию</option>
+                    </select>
+                </div>
+                <div class="input-wrapper__item">
+                    <label class="label" for="position">Должность:</label>
+                    <select class="input position" name="position" required>
+                        <option value="" selected>Укажите должность</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn" type="submit">СОХРАНИТЬ</button>
+        </form>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Email</th>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+        </table>
+          
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
